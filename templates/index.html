@@ -1,0 +1,540 @@
+{% extends "base.html" %}
+{%block title %} Home Page {% endblock %}
+
+{% block content %}
+<!-- /Header -->
+<!-- Main Content -->
+<main class="main">
+    <section>
+        <!-- .hero--mask to add a mask on the image -->
+        <div class="hero hero--parallax hero--simple"
+            style="background-image: url(../static/images/Homepage-Banner-hero-banner-1.jpeg)">
+        </div>
+    </section>
+    <section class="quote-section">
+        <div class="quote container">
+            <h1 class="js-anim h1">Having the conversations <br> that matter to your business.</h1>
+            <div class="comma-decoration" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+                <img src="../static/images/comma-1.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container swiper--slider banter-slider" data-aos="fade-in" data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+            <div class="swiper swiper--alternative mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="./get-loan.html" class="slide-item">
+                            <div class="slide-item__image">
+                                <img src="../static/images/TCI-Casestudy-tile.jpg" alt="">
+                            </div>
+                            <div class="slide-item__content">
+                                <h3 class="slide-item__title">We&#39;re helping a local bank diversify its core function
+                                    for the future of their communities.</h3>
+                                <div class="slide-item__cat">The Collective Impact</div>
+                                <div class="slide-item__url arrow-link">
+                                    <span> What we did </span>
+                                    <svg class="sprite-icon">
+                                        <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./free-property-report.html" class="slide-item">
+                            <div class="slide-item__image">
+                                <img src="../static/images/Laava-placeholder.png" alt="">
+                            </div>
+                            <div class="slide-item__content">
+                                <h3 class="slide-item__title">We&#39;re helping protect brands through connected
+                                    packaging and storytelling with technology solutions.</h3>
+                                <div class="slide-item__cat">LAAVA ID</div>
+                                <div class="slide-item__url arrow-link">
+                                    <span> What we did </span>
+                                    <svg class="sprite-icon">
+                                        <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./comission-calculator.html" class="slide-item">
+                            <div class="slide-item__image">
+                                <img src="../static/images/AJK-Casestudy-tile.jpg" alt="">
+                            </div>
+                            <div class="slide-item__content">
+                                <h3 class="slide-item__title">Re-imagining how a leading architectural outfitter looks
+                                    and functions.</h3>
+                                <div class="slide-item__cat">AJK OUTFITTERS</div>
+                                <div class="slide-item__url arrow-link">
+                                    <span> What we did </span>
+                                    <svg class="sprite-icon">
+                                        <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./get-loan.html" class="slide-item">
+                            <div class="slide-item__image">
+                                <img src="..static/images/TCI-Casestudy-tile.jpg" alt="">
+                            </div>
+                            <div class="slide-item__content">
+                                <h3 class="slide-item__title">We&#39;re helping a local bank diversify its core function
+                                    for the future of their communities.</h3>
+                                <div class="slide-item__cat">The Collective Impact</div>
+                                <div class="slide-item__url arrow-link">
+                                    <span> What we did </span>
+                                    <svg class="sprite-icon">
+                                        <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./free-property-report.html" class="slide-item">
+                            <div class="slide-item__image">
+                                <img src="../static/images/Laava-placeholder.png" alt="">
+                            </div>
+                            <div class="slide-item__content">
+                                <h3 class="slide-item__title">We&#39;re helping protect brands through connected
+                                    packaging and storytelling with technology solutions.</h3>
+                                <div class="slide-item__cat">LAAVA ID</div>
+                                <div class="slide-item__url arrow-link">
+                                    <span> What we did </span>
+                                    <svg class="sprite-icon">
+                                        <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./comission-calculator.html" class="slide-item">
+                            <div class="slide-item__image">
+                                <img src="../static/images/AJK-Casestudy-tile.jpg" alt="">
+                            </div>
+                            <div class="slide-item__content">
+                                <h3 class="slide-item__title">Re-imagining how a leading architectural outfitter looks
+                                    and functions.</h3>
+                                <div class="slide-item__cat">AJK OUTFITTERS</div>
+                                <div class="slide-item__url arrow-link">
+                                    <span> What we did </span>
+                                    <svg class="sprite-icon">
+                                        <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./comission-calculator.html" class="slide-item">
+                            <div class="slide-item__image">
+                                <img src="../static/images/Team-placeholder.jpeg" alt="">
+                            </div>
+                            <div class="slide-item__content">
+                                <h3 class="slide-item__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Repellendus</h3>
+                                <div class="slide-item__cat">FUGA EXERCITATIONEM</div>
+                                <div class="slide-item__url arrow-link">
+                                    <span> What we did </span>
+                                    <svg class="sprite-icon">
+                                        <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./get-loan.html" class="slide-item">
+                            <div class="slide-item__image">
+                                <img src="../static/images/TCI-Casestudy-tile.jpg" alt="">
+                            </div>
+                            <div class="slide-item__content">
+                                <h3 class="slide-item__title">We&#39;re helping a local bank diversify its core function
+                                    for the future of their communities.</h3>
+                                <div class="slide-item__cat">The Collective Impact</div>
+                                <div class="slide-item__url arrow-link">
+                                    <span> What we did </span>
+                                    <svg class="sprite-icon">
+                                        <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./free-property-report.html" class="slide-item">
+                            <div class="slide-item__image">
+                                <img src="../static/images/Laava-placeholder.png" alt="">
+                            </div>
+                            <div class="slide-item__content">
+                                <h3 class="slide-item__title">We&#39;re helping protect brands through connected
+                                    packaging and storytelling with technology solutions.</h3>
+                                <div class="slide-item__cat">LAAVA ID</div>
+                                <div class="slide-item__url arrow-link">
+                                    <span> What we did </span>
+                                    <svg class="sprite-icon">
+                                        <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./comission-calculator.html" class="slide-item">
+                            <div class="slide-item__image">
+                                <img src="../static/images/AJK-Casestudy-tile.jpg" alt="">
+                            </div>
+                            <div class="slide-item__content">
+                                <h3 class="slide-item__title">Re-imagining how a leading architectural outfitter looks
+                                    and functions.</h3>
+                                <div class="slide-item__cat">AJK OUTFITTERS</div>
+                                <div class="slide-item__url arrow-link">
+                                    <span> What we did </span>
+                                    <svg class="sprite-icon">
+                                        <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./comission-calculator.html" class="slide-item">
+                            <div class="slide-item__image">
+                                <img src="../static/images/Team-placeholder.jpeg" alt="">
+                            </div>
+                            <div class="slide-item__content">
+                                <h3 class="slide-item__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Repellendus</h3>
+                                <div class="slide-item__cat">FUGA EXERCITATIONEM</div>
+                                <div class="slide-item__url arrow-link">
+                                    <span> What we did </span>
+                                    <svg class="sprite-icon">
+                                        <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <section>
+        <div class="who-we-are">
+            <div class="green-circle" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1000"
+                data-aos-easing="ease-in-sine"></div>
+            <div class="container">
+                <div class="who-we-are__top">
+                    <div class="who-we-are__top__left">
+                        <h2 class="h1" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">Who
+                            we are</h2>
+                    </div>
+                    <div class="who-we-are__top__right" data-aos="fade-left" data-aos-delay="750"
+                        data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                        <h3 class="who-we-are__desc"> A happy, dedicated team of humans <br> delivering results-driven
+                            work. </h3>
+                        <a href="#" class="arrow-link hover-white mt-15">
+                            <span> More about our team </span>
+                            <svg class="sprite-icon">
+                                <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="who-we-are__image">
+                    <img src="../static/images/Homepage-Banter-Team.jpeg" alt="" data-aos="fade-in" data-aos-delay="150"
+                        data-aos-duration="1000">
+                    <div class="who-we-are__comma" data-aos="fade-left" data-aos-delay="150" data-aos-duration="1000">
+                        <img src="../static/images/comma-0.png" alt="">
+                    </div>
+                </div>
+                <div class="who-we-are__content">
+                    <div class="who-we-are__content__left">
+                        <h3 class="h1 who-we-are__content__title" data-aos="fade-up" data-aos-duration="1000">What we
+                            are <br> talking about</h3>
+                        <div class="who-we-are__content__comma who-we-are__content__comma--d" data-aos="fade-in"
+                            data-aos-delay="500" data-aos-duration="1000">
+                            <img src="../static/images/commas-orange.png" alt="">
+                        </div>
+                    </div>
+                    <div class="who-we-are__content__right">
+                        <ul class="who-we-are__list">
+                            <li data-aos="fade-in" data-aos-duration="1000">
+                                <a href="#">
+                                    <span>How to get on page 1 of Google </span>
+                                    <span class="smaller-icon">
+                                        <svg class="sprite-icon">
+                                            <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000">
+                                <a href="#">
+                                    <span>Creating a buyers agents business </span>
+                                    <span class="smaller-icon">
+                                        <svg class="sprite-icon">
+                                            <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="150" data-aos-duration="1000">
+                                <a href="#">
+                                    <span>Instagram shopping </span>
+                                    <span class="smaller-icon">
+                                        <svg class="sprite-icon">
+                                            <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000">
+                                <a href="#">
+                                    <span>Email marketing ROI </span>
+                                    <span class="smaller-icon">
+                                        <svg class="sprite-icon">
+                                            <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="250" data-aos-duration="1000">
+                                <a href="#">
+                                    <span>Not for profit marketing </span>
+                                    <span class="smaller-icon">
+                                        <svg class="sprite-icon">
+                                            <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000">
+                                <a href="#">
+                                    <span>3d animation secrets </span>
+                                    <span class="smaller-icon">
+                                        <svg class="sprite-icon">
+                                            <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+                            <li data-aos="fade-in" data-aos-delay="350" data-aos-duration="1000">
+                                <a href="#">
+                                    <span>A brand is more than a logo </span>
+                                    <span class="smaller-icon">
+                                        <svg class="sprite-icon">
+                                            <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" class="arrow-link hover-white mt-40" data-aos="fade-in" data-aos-delay="1200"
+                            data-aos-duration="2000">
+                            <span> More from the blog </span>
+                            <svg class="sprite-icon">
+                                <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="who-we-are__content__comma who-we-are__content__comma--m" data-aos="fade-in"
+                        data-aos-delay="500" data-aos-duration="1000">
+                        <img src="../static/images/commas-orange.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="yellow-circle" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000"
+                data-aos-easing="ease-in-sine"></div>
+        </div>
+    </section>
+    <section>
+        <div class="we-can-help">
+            <div class="container">
+                <h4 class="h1" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">We can help
+                    with</h4>
+                <div id="js-tabs-area" class="we-can-help__content tab-container">
+                    <div class="we-can-help__left">
+                        <ul role="tablist" class="we-can-help__list">
+                            <li role="tab" aria-controls="service-1" tabindex="0" aria-selected="false"
+                                data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000"> Branding + Logo Design
+                            </li>
+                            <li role="tab" aria-controls="service-2" tabindex="0" aria-selected="false"
+                                data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000"> Social Media
+                                Management </li>
+                            <li role="tab" aria-controls="service-3" tabindex="0" aria-selected="false"
+                                data-aos="fade-in" data-aos-delay="400" data-aos-duration="1000"> Website Design +
+                                Development </li>
+                            <li role="tab" aria-controls="service-4" tabindex="0" aria-selected="false"
+                                data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000"> Creative Services
+                            </li>
+                            <li role="tab" aria-controls="service-5" tabindex="0" aria-selected="false"
+                                data-aos="fade-in" data-aos-delay="600" data-aos-duration="1000"> SEO + SEM </li>
+                            <li role="tab" aria-controls="service-6" tabindex="0" aria-selected="false"
+                                data-aos="fade-in" data-aos-delay="700" data-aos-duration="1000"> Training + Speaking
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="we-can-help__right tab-panes" data-aos="fade-in" data-aos-duration="2000"
+                        data-aos-easing="ease-in-sine">
+                        <div id="service-0" role="tabpanel" aria-expanded="true">
+                            <img src="../static/images/services-rollover-placeholder.png" alt="">
+                        </div>
+                        <div id="service-1" role="tabpanel" aria-expanded="false">
+                            <img src="../static/images/branding.png" alt="">
+                        </div>
+                        <div id="service-2" role="tabpanel" aria-expanded="false">
+                            <img src="../static/images/social-media.png" alt="">
+                        </div>
+                        <div id="service-3" role="tabpanel" aria-expanded="false">
+                            <img src="../static/images/website-design.png" alt="">
+                        </div>
+                        <div id="service-4" role="tabpanel" aria-expanded="false">
+                            <img src="../static/images/creative.png" alt="">
+                        </div>
+                        <div id="service-5" role="tabpanel" aria-expanded="false">
+                            <img src="../static/images/seo.png" alt="">
+                        </div>
+                        <div id="service-6" role="tabpanel" aria-expanded="false">
+                            <img src="../static/images/training.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        class TabController {
+            constructor(container) {
+                this.container = document.querySelector(container);
+                this.tablist = this.container.querySelector('[role=tablist]');
+                this.tabs = this.container.querySelectorAll('[role=tab]');
+                this.tabpanels = this.container.querySelectorAll('[role=tabpanel]');
+                this.activeTab = this.container.querySelector('[role=tab][aria-selected=true]');
+                this._addEventListeners();
+            }
+            // Private function to set event listeners
+            _addEventListeners() {
+                for (let tab of this.tabs) {
+                    tab.addEventListener('mouseover', e => {
+                        e.preventDefault();
+                        this.setActiveTab(tab.getAttribute('aria-controls'));
+                    });
+                    tab.addEventListener('keyup', e => {
+                        if (e.keyCode == 13 || e.keyCode == 32) { // return or space
+                            e.preventDefault();
+                            this.setActiveTab(tab.getAttribute('aria-controls'));
+                        }
+                    })
+                }
+                this.tablist.addEventListener('keyup', e => {
+                    switch (e.keyCode) {
+                        case 35: // end key
+                            e.preventDefault();
+                            this.setActiveTab(this.tabs[this.tabs.length - 1].getAttribute('aria-controls'));
+                            break;
+                        case 36: // home key
+                            e.preventDefault();
+                            this.setActiveTab(this.tabs[0].getAttribute('aria-controls'));
+                            break;
+                        case 37: // left arrow
+                            e.preventDefault();
+                            let previous = [...this.tabs].indexOf(this.activeTab) - 1;
+                            previous = previous >= 0 ? previous : this.tabs.length - 1;
+                            this.setActiveTab(this.tabs[previous].getAttribute('aria-controls'));
+                            break;
+                        case 39: // right arrow
+                            e.preventDefault();
+                            let next = [...this.tabs].indexOf(this.activeTab) + 1;
+                            next = next < this.tabs.length ? next : 0
+                            this.setActiveTab(this.tabs[next].getAttribute('aria-controls'));
+                            break;
+                    }
+                })
+            }
+            // Public function to set the tab by id
+            // This can be called by the developer too.
+            setActiveTab(id) {
+                for (let tab of this.tabs) {
+                    if (tab.getAttribute('aria-controls') == id) {
+                        tab.setAttribute('aria-selected', "true");
+                        tab.focus();
+                        this.activeTab = tab;
+                    }
+                    else {
+                        tab.setAttribute('aria-selected', "false");
+                    }
+                }
+                for (let tabpanel of this.tabpanels) {
+                    if (tabpanel.getAttribute('id') == id) {
+                        tabpanel.setAttribute('aria-expanded', "true");
+                    }
+                    else {
+                        tabpanel.setAttribute('aria-expanded', "false");
+                    }
+                }
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            // tabs init
+            const exampleTabController = new TabController('#js-tabs-area');
+        });
+
+    </script>
+    <section>
+        <div class="we-work-with">
+            <div class="container">
+                <h5 class="h6 text-uppercase" data-aos="fade-in" data-aos-duration="1500">Humans we work with</h5>
+                <div class="we-work-with__logos">
+                    <a href="#" class="we-work-with__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="../static/images/Banter-client-logos-1.png" alt="">
+                    </a>
+                    <a href="#" class="we-work-with__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="../static/images/Banter-client-logos-2.png" alt="">
+                    </a>
+                    <a href="#" class="we-work-with__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="../static/images/Banter-client-logos-3.png" alt="">
+                    </a>
+                    <a href="#" class="we-work-with__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="../static/images/Banter-client-logos-4.png" alt="">
+                    </a>
+                    <a href="#" class="we-work-with__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="../static/images/Banter-client-logos-5.png" alt="">
+                    </a>
+                    <a href="#" class="we-work-with__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="../static/images/Banter-client-logos-6.png" alt="">
+                    </a>
+                    <a href="#" class="we-work-with__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="../static/images/Banter-client-logos-7.png" alt="">
+                    </a>
+                    <a href="#" class="we-work-with__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="../static/images/Banter-client-logos-8.png" alt="">
+                    </a>
+                    <a href="#" class="we-work-with__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="../static/images/Banter-client-logos-9.png" alt="">
+                    </a>
+                    <a href="#" class="we-work-with__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="../static/images/Banter-client-logos-10.png" alt="">
+                    </a>
+                    <a href="#" class="we-work-with__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="../static/images/Banter-client-logos-11.png" alt="">
+                    </a>
+                    <a href="#" class="we-work-with__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="../static/images/Banter-client-logos-12.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

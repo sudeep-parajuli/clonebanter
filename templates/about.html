@@ -1,0 +1,653 @@
+{% extends "base.html" %}
+{% block title %}About {% endblock %}
+
+{% block content %}
+<main class="main">
+    <section>
+        <div class="hero hero--parallax hero--simple"
+            style="background-image: url(../static/images/banter-group-home.jpeg)">
+        </div>
+    </section>
+    <section>
+        <div class="about-us">
+            <div class="container">
+                <div class="about-us__text">
+                    <h1 class="h2 about-us__title" data-aos="fade-up" data-aos-duration="1000">We're a happy team,
+                        delivering result-driven work, for happy clients.</h1>
+                    <h5 class="h5 about-us__subtitle" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="1000">
+                        We work for a wide variety of clients. Southern Highlands based, working with clients all over
+                        Australia. vitea dos santos more text about banter goes here about what we can offer and how we
+                        work.</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="about-values mb-50">
+                <h2 class="h1 mb-75 js-anim">We live by our values</h2>
+                <div class="values-grid" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                    <div class="values-item">
+                        <div class="values-item__image" style="background-color: #00aaa1;">
+                            <figure class="effect-ming">
+                                <img src="../static/images/value-1.png" alt="">
+                                <figcaption>
+                                    <p>Do what’s best even when no one is watching.</p>
+                                    <p>Make the right decision for the client, even if it cuts us out of a job.</p>
+                                    <p>We stand by what we believe in.</p>
+                                    <p>No brilliant jerks.</p>
+                                    <p>We have each other’s back and strive for common goals.</p>
+                                    <p>We want to grow as individuals and as a team.</p>
+                                    <p>We never stop learning.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="values-item__content">
+                            <h3 class="values-item__title h3">Be a good human</h3>
+                        </div>
+                    </div>
+                    <div class="values-item">
+                        <div class="values-item__image" style="background-color: #483480;">
+                            <figure class="effect-ming">
+                                <img src="../static/images/value-2.png" alt="">
+                                <figcaption>
+                                    <p>We strive for excellence in our field and we want to share that knowledge and
+                                        expertise willingly.</p>
+                                    <p>We take the mystery out of marketing and make it easy for clients to understand
+                                        the impact of their decisions.</p>
+                                    <p>If we make a mistake, we take ownership.</p>
+                                    <p>We value our contribution.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="values-item__content">
+                            <h3 class="values-item__title h3">Guide the way</h3>
+                        </div>
+                    </div>
+                    <div class="values-item">
+                        <div class="values-item__image" style="background-color: #f9c5d1;">
+                            <figure class="effect-ming">
+                                <img src="../static/images/value-3.png" alt="">
+                                <figcaption>
+                                    <p>Treat others the way you want to be treated.</p>
+                                    <p>We act with regard for the feelings, wishes, and rights of others.</p>
+                                    <p>Clients are respectful of our experience and value our contribution.</p>
+                                    <p>Use as much of us as you need, when you need us.</p>
+                                    <p>Our world changes constantly and we roll with the punches.</p>
+                                    <p>The computer doesn’t say no.</p>
+                                    <p>Family comes first.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="values-item__content">
+                            <h3 class="values-item__title h3">We feel you</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="about-team border-top-separator border-bottom-separator">
+            <div class="about-team__left about-col-left">
+                <div class="about-team__left__top">
+                    <a href="./team.html" class="arrow-link hover-white mt-15" data-aos="fade-in"
+                        data-aos-duration="1000" data-aos-delay="1500">
+                        <span> See the whole team </span>
+                        <svg class="sprite-icon">
+                            <use xlink:href="../scripts/images/svg/sprite.svg#long-arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="about-team__left__b" data-aos="fade-in" data-aos-duration="1000">
+                    <h3 class="h3">Who we are</h3>
+                    <div class="teamSwiper__controls">
+                        <div class="teamSwiper-button-prev">
+                            <svg class="sprite-icon">
+                                <use xlink:href="../scripts/images/svg/sprite.svg#long-arrow-right"></use>
+                            </svg>
+                        </div>
+                        <div class="teamSwiper-button-next">
+                            <svg class="sprite-icon">
+                                <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-team__slider about-col-right">
+                <div class="swiper--slider team-slider" data-aos="fade-in" data-aos-duration="1000"
+                    data-aos-easing="ease-in-sine">
+                    <div class="swiper teamSwiper">
+                        <!-- all images need to be the same exported from Photosop to achieve simetry | we shouldn't use with; height preferably -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="" class="slide-item">
+                                    <div class="teamSwiper__image">
+                                        <img src="../static/images/Val_Black_Resized.jpg" alt="">
+                                    </div>
+                                    <div class="teamSwiper__content">
+                                        <h3 class="teamSwiper__title">Valentina Borbone</h3>
+                                        <h3 class="teamSwiper__position">Founder and CEO</h3>
+                                        <div class="arrow-link mt-15">
+                                            <span> Learn more </span>
+                                            <svg class="sprite-icon">
+                                                <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="slide-item">
+                                    <div class="teamSwiper__image">
+                                        <img src="../static/images/Fran_Black_Resized.jpg" alt="">
+                                    </div>
+                                    <div class="teamSwiper__content">
+                                        <h3 class="teamSwiper__title">Francesca Bozic</h3>
+                                        <h3 class="teamSwiper__position">Creative Director</h3>
+                                        <div class="arrow-link mt-15">
+                                            <span> Learn more </span>
+                                            <svg class="sprite-icon">
+                                                <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="slide-item">
+                                    <div class="teamSwiper__image">
+                                        <img src="../static/images/Amberley_Black_Resized.jpg" alt="">
+                                    </div>
+                                    <div class="teamSwiper__content">
+                                        <h3 class="teamSwiper__title">Amberley Guilly</h3>
+                                        <h3 class="teamSwiper__position">Account Director</h3>
+                                        <div class="arrow-link mt-15">
+                                            <span> Learn more </span>
+                                            <svg class="sprite-icon">
+                                                <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="slide-item">
+                                    <div class="teamSwiper__image">
+                                        <img src="../static/images/Nik-Love-Black-resized.jpg" alt="">
+                                    </div>
+                                    <div class="teamSwiper__content">
+                                        <h3 class="teamSwiper__title">Nik Love</h3>
+                                        <h3 class="teamSwiper__position">Senior Web Producer</h3>
+                                        <div class="arrow-link mt-15">
+                                            <span> Learn more </span>
+                                            <svg class="sprite-icon">
+                                                <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="slide-item">
+                                    <div class="teamSwiper__image">
+                                        <img src="../static/images/Talia_Black_Resized.jpg" alt="">
+                                    </div>
+                                    <div class="teamSwiper__content">
+                                        <h3 class="teamSwiper__title">Talia Stringer</h3>
+                                        <h3 class="teamSwiper__position">Senior Producer</h3>
+                                        <div class="arrow-link mt-15">
+                                            <span> Learn more </span>
+                                            <svg class="sprite-icon">
+                                                <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="slide-item">
+                                    <div class="teamSwiper__image">
+                                        <img src="../static/images/Alana_Black-Resized.jpg" alt="">
+                                    </div>
+                                    <div class="teamSwiper__content">
+                                        <h3 class="teamSwiper__title">Alana Kaye</h3>
+                                        <h3 class="teamSwiper__position">Social Media Manager</h3>
+                                        <div class="arrow-link mt-15">
+                                            <span> Learn more </span>
+                                            <svg class="sprite-icon">
+                                                <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="slide-item">
+                                    <div class="teamSwiper__image">
+                                        <img src="../static/images/Jess_Black_Resized.jpg" alt="">
+                                    </div>
+                                    <div class="teamSwiper__content">
+                                        <h3 class="teamSwiper__title">Jess Ryan</h3>
+                                        <h3 class="teamSwiper__position">Social Media Coordinator</h3>
+                                        <div class="arrow-link mt-15">
+                                            <span> Learn more </span>
+                                            <svg class="sprite-icon">
+                                                <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="slide-item">
+                                    <div class="teamSwiper__image">
+                                        <img src="../static/imges/Jane_Black_Resized.jpg" alt="">
+                                    </div>
+                                    <div class="teamSwiper__content">
+                                        <h3 class="teamSwiper__title">Jane Aylen</h3>
+                                        <h3 class="teamSwiper__position">Copywriter</h3>
+                                        <div class="arrow-link mt-15">
+                                            <span> Learn more </span>
+                                            <svg class="sprite-icon">
+                                                <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="slide-item">
+                                    <div class="teamSwiper__image">
+                                        <img src="../static/images/Montana_Black_Resized.jpg" alt="">
+                                    </div>
+                                    <div class="teamSwiper__content">
+                                        <h3 class="teamSwiper__title">Montana Soldati</h3>
+                                        <h3 class="teamSwiper__position">Account Coordinator</h3>
+                                        <div class="arrow-link mt-15">
+                                            <span> Learn more </span>
+                                            <svg class="sprite-icon">
+                                                <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="slide-item">
+                                    <div class="teamSwiper__image">
+                                        <img src="../static/images/Nell_Black_Resized.jpg" alt="">
+                                    </div>
+                                    <div class="teamSwiper__content">
+                                        <h3 class="teamSwiper__title">Nell Shephard</h3>
+                                        <h3 class="teamSwiper__position">Office Manager</h3>
+                                        <div class="arrow-link mt-15">
+                                            <span> Learn more </span>
+                                            <svg class="sprite-icon">
+                                                <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="slide-item">
+                                    <div class="teamSwiper__image">
+                                        <img src="../static/images/Tess_Black_Resized.jpg" alt="">
+                                    </div>
+                                    <div class="teamSwiper__content">
+                                        <h3 class="teamSwiper__title">Tess Ellis</h3>
+                                        <h3 class="teamSwiper__position">Senior Designer</h3>
+                                        <div class="arrow-link mt-15">
+                                            <span> Learn more </span>
+                                            <svg class="sprite-icon">
+                                                <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="slide-item">
+                                    <div class="teamSwiper__image">
+                                        <img src="../static/images/Sasha_Black_2_Resized.jpg" alt="">
+                                    </div>
+                                    <div class="teamSwiper__content">
+                                        <h3 class="teamSwiper__title">Sasha Lach Newinksy</h3>
+                                        <h3 class="teamSwiper__position">Art Director</h3>
+                                        <div class="arrow-link mt-15">
+                                            <span> Learn more </span>
+                                            <svg class="sprite-icon">
+                                                <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="slide-item">
+                                    <div class="teamSwiper__image">
+                                        <img src="../static/images/Jade_Black_Resized.jpg" alt="">
+                                    </div>
+                                    <div class="teamSwiper__content">
+                                        <h3 class="teamSwiper__title">Jade Bell</h3>
+                                        <h3 class="teamSwiper__position">Marketing Coordinator</h3>
+                                        <div class="arrow-link mt-15">
+                                            <span> Learn more </span>
+                                            <svg class="sprite-icon">
+                                                <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="about-how-we-work about-cols">
+            <div class="about-cols__container container">
+                <div class="about-cols__row">
+                    <div class="about-col-left about-how-we-work__left">
+                        <div class="container">
+                            <h3 class="h3" data-aos="fade-in" data-aos-duration="1000">How we work</h3>
+                        </div>
+                    </div>
+                    <div class="about-col-right about-how-we-work__right">
+                        <div class="container" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1000">
+                            <div class="plaintext">
+                                <p> The Banter approach means we utilise our team for their personal experience in
+                                    delivering your solution. Whether it’s a short term campaign or a long term
+                                    strategy, there is never a cookie-cutter approach to our solutions. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="about-how-we-work about-cols">
+            <div class="about-cols__container container">
+                <div class="about-cols__row">
+                    <div class="about-col-left about-how-we-work__left">
+                        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+                            <h3 class="h3">People talk</h3>
+                            <div class="plaintext mt-20">
+                                <p> This is what they have <br> had to say about us </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-col-right about-how-we-work__right">
+                        <div class="testimonials" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1000">
+                            <div class="container">
+                                <div class="swiper testimonialSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="testimonials__item">
+                                                <div class="plaintext">
+                                                    <p> Details matter. Val and her team have integrated with our
+                                                        business to help us effectively project who we are and what we
+                                                        do to our growing customer base. </p>
+                                                    <p> The Banter team took time and care to understand what was
+                                                        important to us and the existing values of our business. They
+                                                        used this as a starting point to work with us through
+                                                        collaboration sessions, market research, and their industry
+                                                        expertise, to develop the new brand and material our business
+                                                        can be proud of today. </p>
+                                                    <p> We treat the staff at Banter as an extension of our own, and
+                                                        have developed relationships with them that ensure our marketing
+                                                        experts are only ever a phone call away. We intend to be working
+                                                        alongside Val and her team of superstars well into the future
+                                                        and have already recommended their services to many. </p>
+                                                </div>
+                                                <div class="mt-30">
+                                                    <strong> Matt Fountain </strong>
+                                                </div>
+                                                <div class="text-gray mt-5 font-16">
+                                                    <p>Head of Commercial AJK Outfitters</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="testimonials__item">
+                                                <div class="plaintext">
+                                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                                        fugiat fugit quo numquam ab soluta eaque natus deserunt sit,
+                                                        quaerat nam labore itaque officia expedita incidunt molestiae
+                                                        corrupti illum dignissimos? </p>
+                                                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
+                                                        excepturi quis nemo! Reprehenderit placeat cupiditate nemo,
+                                                        earum laboriosam id doloremque, velit esse laborum porro, odio
+                                                        nesciunt voluptatum molestiae officiis autem? </p>
+                                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Mollitia hic ut aperiam dolores praesentium dolorem laboriosam?
+                                                        Dignissimos consequatur eveniet suscipit, adipisci explicabo
+                                                        excepturi cum sequi vel, officiis eius totam inventore! </p>
+                                                </div>
+                                                <div class="mt-30">
+                                                    <strong> Jane Austen </strong>
+                                                </div>
+                                                <div class="text-gray mt-5 font-16">
+                                                    <p>Head of Lorem Ipsum</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="testimonials__item">
+                                                <div class="plaintext">
+                                                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
+                                                        nam molestiae itaque ab! Facere inventore quis non, est hic fuga
+                                                        dolorem sit officiis molestiae, odit sint vero error impedit
+                                                        adipisci! Quod itaque odit soluta. Nisi dolorum facere doloribus
+                                                        exercitationem. Iusto, et id. Velit similique rerum error magnam
+                                                        suscipit earum. Cumque enim doloremque suscipit vero vel non
+                                                        deserunt dolor doloribus. Iure. </p>
+                                                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Sapiente sint laborum eveniet deserunt laboriosam pariatur
+                                                        distinctio excepturi temporibus, facere ullam, ea cum, libero
+                                                        cumque voluptate odio fuga nostrum necessitatibus! Est. Odio sed
+                                                        quas numquam ut provident consequuntur. Ipsa sint iure saepe
+                                                        odit cumque impedit, ducimus harum distinctio rerum praesentium,
+                                                        qui libero ipsam quod id suscipit, aspernatur voluptatibus
+                                                        accusantium necessitatibus architecto? </p>
+                                                </div>
+                                                <div class="mt-30">
+                                                    <strong> William Bonaventura </strong>
+                                                </div>
+                                                <div class="text-gray mt-5 font-16">
+                                                    <p>Head of Client Company</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonialSwiper-pagination"></div>
+                            </div>
+                            <div class="about-how-we-work__comma">
+                                <img src="../static/images/comma-1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- /Main Content -->
+
+<!-- Swiper Slider -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper",
+        {
+            slidesPerView: 3,
+            spaceBetween: 80,
+            autoplay: false,
+            navigation:
+            {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            pagination:
+            {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints:
+            {
+                320:
+                {
+                    slidesPerView: 1,
+                    spaceBetween: 15
+                },
+                420:
+                {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                767:
+                {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                1620:
+                {
+                    spaceBetween: 80
+                }
+            }
+        });
+
+</script>
+<script>
+    var swiper = new Swiper(".teamSwiper",
+        {
+            slidesPerView: 3,
+            spaceBetween: 0,
+            loop: true,
+            autoplay:
+            {
+                delay: 5000,
+                disableOnInteraction: true
+            },
+            navigation:
+            {
+                nextEl: ".teamSwiper-button-next",
+                prevEl: ".teamSwiper-button-prev"
+            },
+            pagination: false,
+            breakpoints:
+            {
+                320:
+                {
+                    slidesPerView: 1.7
+                },
+                667:
+                {
+                    slidesPerView: 2.3
+                },
+                1440:
+                {
+                    slidesPerView: 3.3
+                }
+            }
+        });
+    var swiper = new Swiper(".testimonialSwiper",
+        {
+            slidesPerView: 1,
+            spaceBetween: 110,
+            loop: true,
+            autoplay:
+            {
+                delay: 50000,
+                disableOnInteraction: true
+            },
+            pagination:
+            {
+                el: ".testimonialSwiper-pagination",
+                clickable: true
+            }
+        });
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script>
+    // Wrap every letter in a span
+    const animatedTexts = document.querySelectorAll('.js-anim');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animated");
+                const letters = entry.target.querySelectorAll('.letter');
+                anime.timeline(
+                    {
+                        loop: false
+                    }).add(
+                        {
+                            targets: letters,
+                            opacity: [
+                                0, 1
+                            ],
+                            easing: "easeInOutQuad",
+                            duration: 1250,
+                            delay: (el, i) => 50 * (i + 1)
+                        }).add(
+                            {
+                                targets: entry.target,
+                                opacity: 1,
+                                duration: 1000,
+                                easing: "easeOutExpo",
+                                delay: 500
+                            });
+                observer.unobserve(entry.target)
+            }
+        })
+    },
+        {
+            rootMargin: "-100px"
+        })
+    if (animatedTexts) {
+        animatedTexts.forEach((animatedText) => {
+            animatedText.innerHTML = animatedText.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+            observer.observe(animatedText)
+        });
+    }
+
+</script>
+<!-- /Custom Scripts -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init(
+        {
+            once: true, // animation should happen only once - while scrolling down
+            offset: 50 // offset (in px) from the original trigger point
+        });
+
+</script>
+<!-- page loader -->
+<script>
+    const pageLoader = document.getElementById("pageLoader");
+    pageLoader.classList.add("page-loaded")
+
+</script>
+
+{% endblock %}

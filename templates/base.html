@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> {%block title %} {% endblock %} </title>
+    <meta name="description" content="page description text">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <!-- Basic Images Start -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="icon" href="../static/images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <!-- Basic Images End -->
+    <!--Static page-->
+    <link rel="stylesheet" href="{%static 'css/master.css' %}">
+    <script type="text/javascript" src="{% static 'js/app.js' %}"></script>
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#00aaa1">
+    <!-- Custom Browsers Color End -->
+    <style>
+        .page-loader {
+            background-color: #000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+            visibility: visible;
+            transition: all 10.25s linear;
+        }
+
+        .page-loader.page-loaded {
+            opacity: 0;
+            visibility: hidden;
+            z-index: -99;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+    <div id="pageLoader" class="page-loader"></div>
+    <div class="main-page">
+        <!-- Header -->
+        <div class="main-header-outer js-main-header-outer">
+            <header class="main-header js-main-header">
+                <div class="main-header__container container">
+                    <div class="main-header__content">
+                        <div class="main-header__logo">
+                            <a href="/" class="main-header__logo-link">
+                                <img src="../static/images/logo.svg" class="main-header__logo-img" alt="Logo">
+                            </a>
+                        </div>
+                        <div class="main-menu__opener">
+                            <div class="menu-opener js-menu-opener">
+                                <span class="menu-opener__inner js-menu-opener__inner">
+                                    <span class="menu-opener__lines"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-header__menu main-menu js-main-menu">
+                        <nav class="main-menu__nav">
+                            <div class="main-menu__inner">
+                                <ul class="main-menu__list js-main-menu__list">
+                                    <li class="main-menu__item active">
+                                        <a href="/" class="main-menu__link"> Home </a>
+                                    </li>
+                                    <li class="main-menu__item  ">
+                                        <a href="./about.html" class="main-menu__link"> About </a>
+                                    </li>
+                                    <li class="main-menu__item  ">
+                                        <a href="./team.html" class="main-menu__link"> Team </a>
+                                    </li>
+                                    <li class="main-menu__item  ">
+                                        <a href="./services.html" class="main-menu__link"> Services </a>
+                                    </li>
+                                    <li class="main-menu__item  ">
+                                        <a href="./case-study.html" class="main-menu__link"> Case Studies </a>
+                                    </li>
+                                    <li class="main-menu__item  ">
+                                        <a href="./projects.html" class="main-menu__link"> Projects </a>
+                                    </li>
+                                    <li class="main-menu__item  ">
+                                        <a href="./blog.html" class="main-menu__link"> News </a>
+                                    </li>
+                                    <li class="main-menu__item  ">
+                                        <a href="./contact.html" class="main-menu__link"> Contact </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <div class="main-menu__extra">
+                            <div class="main-menu__text plaintext">
+                                <h5>
+                                    <strong>Acknowledgement of Country</strong>
+                                </h5>
+                                <p> Banter Group acknowledges the Gundungurra people as the Traditional Owners of the
+                                    land on which our agency stands, and extend this respect to all First Nations
+                                    peoples, including Elders past, present and emerging. </p>
+                            </div>
+                            <div class="main-menu__social">
+                                <a href="#" class="main-menu__social-icon">
+                                    <svg class="sprite-icon">
+                                        <use xlink:href="img/svg/sprite.svg#linkedin"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="main-menu__social-icon">
+                                    <svg class="sprite-icon">
+                                        <use xlink:href="img/svg/sprite.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="main-menu__social-icon">
+                                    <svg class="sprite-icon">
+                                        <use xlink:href="img/svg/sprite.svg#youtube"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="main-menu__social-icon">
+                                    <svg class="sprite-icon">
+                                        <use xlink:href="img/svg/sprite.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        {% block content %}
+
+        {% endblock %}
+        <!-- /Main Content -->
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="main-footer__follow">
+                <div class="main-footer__container container">
+                    <div class="contact-f">
+                        <div class="contact-f__left">
+                            <h6 class="h3 contact-f__title">Let’s chat about you</h6>
+                            <a href="#" class="hover-white arrow-link">
+                                <span> Start a conversation </span>
+                                <svg class="sprite-icon">
+                                    <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="contact-f__right">
+                            <h6 class="h3 contact-f__title">Stay in the know</h6>
+                            <div class="contact-f__form">
+                                <input type="text" class="contact-f__input contact-f__name" placeholder="Your Name">
+                                <input type="email" class="contact-f__input contact-f__email" placeholder="Your Email">
+                                <button class="contact-f__submit arrow-link hover-white">
+                                    <span> Sign up </span>
+                                    <svg class="sprite-icon">
+                                        <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instagram">
+                        <div class="instagram__left">
+                            <h6 class="h5">From Instagram</h6>
+                            <a href="#" class="hover-white arrow-link">
+                                <span> Follow us </span>
+                                <svg class="sprite-icon">
+                                    <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="instagram__feed">
+                            <a href="#" class="instagram__element">
+                                <img src="../static/images/inst-1.jpeg" alt="">
+                            </a>
+                            <a href="#" class="instagram__element">
+                                <img src="../static/images/inst-2.jpeg" alt="">
+                            </a>
+                            <a href="#" class="instagram__element">
+                                <img src="../static/images/inst-3.jpeg" alt="">
+                            </a>
+                            <a href="#" class="instagram__element">
+                                <img src="../static/images/inst-4.jpeg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-footer__bottom">
+                <div class="main-footer__container container">
+                    <div class="main-footer__content">
+                        <div class="main-footer__logo">
+                            <a href="/" class="main-footer__logo-link">
+                                <img src="../static/images/logo-simple-dark.svg" class="main-footer__logo-img"
+                                    alt="Logo">
+                            </a>
+                        </div>
+                        <div class="main-footer__right">
+                            <h6 class="main-footer__slogan"> Be good humans. Be social. </h6>
+                            <div class="main-footer__social">
+                                <a href="#" class="main-menu__social-icon main-footer__social-icon">
+                                    <svg class="sprite-icon">
+                                        <use xlink:href="../static/images/svg/sprite.svg#linkedin"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="main-menu__social-icon main-footer__social-icon">
+                                    <svg class="sprite-icon">
+                                        <use xlink:href="../static/images/svg/sprite.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="main-menu__social-icon main-footer__social-icon">
+                                    <svg class="sprite-icon">
+                                        <use xlink:href="../static/images/svg/sprite.svg#youtube"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="main-menu__social-icon main-footer__social-icon">
+                                    <svg class="sprite-icon">
+                                        <use xlink:href="../static/images/svg/sprite.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="back-to-top" id="backToTop">
+                                <svg class="sprite-icon">
+                                    <use xlink:href="../static/images/svg/sprite.svg#arrow-up"></use>
+                                </svg>
+                            </div>
+                            <nav class="main-footer__menu">
+                                <ul class="main-footer__menu-list">
+                                    <li class="main-footer__menu-item">
+                                        <a href="./privacy.html" class="main-footer__menu-link"> Privacy </a>
+                                    </li>
+                                    <li class="main-footer__menu-item">
+                                        <a href="./terms.html" class="main-footer__menu-link"> Terms </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /Footer -->
+        <!-- scripts file -->
+        <script src="../static/js/common.js"></script>
+        <!-- Custom Scripts -->
+        <!-- Swiper Slider -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper",
+                {
+                    slidesPerView: 3,
+                    spaceBetween: 80,
+                    shortSwipes: false,
+                    longSwipesMs: 50,
+                    longSwipesRatio: 0.25,
+                    navigation:
+                    {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev"
+                    },
+                    pagination:
+                    {
+                        el: ".swiper-pagination",
+                        clickable: true
+                    },
+                    breakpoints:
+                    {
+                        320:
+                        {
+                            slidesPerView: 1,
+                            spaceBetween: 0
+                        },
+                        420:
+                        {
+                            slidesPerView: 2,
+                            spaceBetween: 20
+                        },
+                        767:
+                        {
+                            slidesPerView: 3,
+                            spaceBetween: 30
+                        },
+                        1620:
+                        {
+                            spaceBetween: 60
+                        }
+                    }
+                });
+
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script>
+            // Wrap every letter in a span
+            const animatedTexts = document.querySelectorAll('.js-anim');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animated");
+                        const letters = entry.target.querySelectorAll('.letter');
+                        anime.timeline(
+                            {
+                                loop: false
+                            }).add(
+                                {
+                                    targets: letters,
+                                    opacity: [
+                                        0, 1
+                                    ],
+                                    easing: "easeInOutQuad",
+                                    duration: 1250,
+                                    delay: (el, i) => 50 * (i + 1)
+                                }).add(
+                                    {
+                                        targets: entry.target,
+                                        opacity: 1,
+                                        duration: 1000,
+                                        easing: "easeOutExpo",
+                                        delay: 500
+                                    });
+                        observer.unobserve(entry.target)
+                    }
+                })
+            },
+                {
+                    rootMargin: "-100px"
+                })
+            if (animatedTexts) {
+                animatedTexts.forEach((animatedText) => {
+                    animatedText.innerHTML = animatedText.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+                    observer.observe(animatedText)
+                });
+            }
+
+        </script>
+        <!-- /Custom Scripts -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init(
+                {
+                    once: true, // animation should happen only once - while scrolling down
+                    offset: 50 // offset (in px) from the original trigger point
+                });
+
+        </script>
+        <!-- page loader -->
+        <script>
+            const pageLoader = document.getElementById("pageLoader");
+            pageLoader.classList.add("page-loaded")
+
+        </script>
+    </div>
+</body>
+
+</html>

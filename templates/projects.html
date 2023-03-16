@@ -1,0 +1,326 @@
+{% extends "base.html" %}
+{% block title%} Projects {% endblock %}
+
+{% block content %}
+<!-- Main Content -->
+<main class="main">
+    <section>
+        <div class="hero hero--color hero--black">
+            <div class="container">
+                <h1 class="js-anim h2 hero__title">We work with good humans from diverse industries</h1>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="case-study__page projects__page">
+            <div class="container">
+                <div class="filter" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                    <ul class="filter__list">
+                        <li class="filter__item"> Filter Projects </li>
+                        <li class="filter__item">
+                            <a href="#">All</a>
+                        </li>
+                        <li class="filter__item">
+                            <a href="#">Social Media Management</a>
+                        </li>
+                        <li class="filter__item">
+                            <a href="#">Creative Services</a>
+                        </li>
+                        <li class="filter__item">
+                            <a href="#">Training + Speaking</a>
+                        </li>
+                        <li class="filter__item">
+                            <a href="#">SEO + SEM</a>
+                        </li>
+                        <li class="filter__item">
+                            <a href="#">Website Design + Development</a>
+                        </li>
+                        <li class="filter__item">
+                            <a href="#">Branding + Logo Design</a>
+                        </li>
+                        <li class="filter__item">
+                            <a href="#">Animation</a>
+                        </li>
+                        <li class="filter__item">
+                            <a href="#">Insights + Marketing Strategy</a>
+                        </li>
+                    </ul>
+                    <select class="filter__select">
+                        <option value="0">All</option>
+                        <option value="1">Social Media Management</option>
+                        <option value="2">Creative Services</option>
+                        <option value="3">Training + Speaking</option>
+                        <option value="4">SEO + SEM</option>
+                        <option value="5">Website Design + Development</option>
+                        <option value="6">Branding + Logo Design</option>
+                        <option value="7">Animation</option>
+                        <option value="8">Insights + Marketing Strategy</option>
+                    </select>
+                </div>
+                <div class="case-study__grid projects__grid" id="projects-grid">
+                    <!-- Slideshow project item -->
+                    <div class="case-study projects slideshow js-slideshow js-slideshow_play-on-hover js-project-item"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        <div class="case-study__image js-show-more-projects">
+                            <img class="slideshow__img js-slideshow__img js-show-more-projects"
+                                src="https://picsum.photos/700/800" alt="Slideshow Project (on item hover)"
+                                loading="lazy">
+                            <img class="slideshow__img js-slideshow__img js-show-more-projects"
+                                src="https://picsum.photos/600/700" alt="Slideshow Project (on item hover)"
+                                loading="lazy">
+                            <img class="slideshow__img js-slideshow__img js-show-more-projects"
+                                src="https://picsum.photos/500/600" alt="Slideshow Project (on item hover)"
+                                loading="lazy">
+                            <img class="slideshow__img js-slideshow__img js-show-more-projects"
+                                src="https://picsum.photos/400/500" alt="Slideshow Project (on item hover)"
+                                loading="lazy">
+                        </div>
+                        <h3 class="case-study__title js-show-more-projects">Slideshow Project (on item hover)</h3>
+                        <div class="projects__desc"> Ducimus architecto esse aliquid necessitatibus fugiat debitis vel
+                            temporibus ex omnis! Est officia temporibus accusamus error, pariatur quibusdam tempore
+                            tempora aliquid accusantium! </div>
+                        <div class="info-button arrow-link js-show-more-projects">
+                            <span class="info-button__more js-show-more-projects">More info +</span>
+                            <span class="info-button__less js-show-more-projects">Less info -</span>
+                        </div>
+                    </div>
+                    <!-- /Slideshow project item -->
+                    <!-- Project item -->
+                    <div class="case-study projects js-project-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="case-study__image js-show-more-projects">
+                            <img class="img-front js-show-more-projects" src="../static/images/case-1.jpeg"
+                                alt="Consectetur adipisicing elit" loading="lazy">
+                            <img class="img-back js-show-more-projects" src="../static/images/case-3.jpeg"
+                                alt="Consectetur adipisicing elit" loading="lazy">
+                        </div>
+                        <h3 class="case-study__title js-show-more-projects">Consectetur adipisicing elit</h3>
+                        <div class="projects__desc"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Laudantium dolorem reiciendis itaque, amet quas vel labore laboriosam fuga libero
+                            repudiandae, quia laborum accusamus voluptatem modi similique officiis unde id nesciunt?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, aliquam dolorum cupiditate
+                            rerum necessitatibus enim maiores ratione perferendis excepturi sint nostrum, unde fuga
+                            voluptatum! Laborum incidunt aspernatur voluptates quis numquam! </div>
+                        <div class="info-button arrow-link js-show-more-projects">
+                            <span class="info-button__more js-show-more-projects">More info +</span>
+                            <span class="info-button__less js-show-more-projects">Less info -</span>
+                        </div>
+                    </div>
+                    <!-- /Project item -->
+                    <!-- Project item -->
+                    <div class="case-study projects js-project-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="case-study__image js-show-more-projects">
+                            <img class="img-front js-show-more-projects" src="../static/images/case-2.jpeg"
+                                alt="Facilis delectus rem qui aut dolorum" loading="lazy">
+                            <img class="img-back js-show-more-projects" src="../static/images/case-4.jpeg"
+                                alt="Facilis delectus rem qui aut dolorum" loading="lazy">
+                        </div>
+                        <h3 class="case-study__title js-show-more-projects">Facilis delectus rem qui aut dolorum</h3>
+                        <div class="projects__desc"> Laudantium dolorem reiciendis itaque, amet quas vel labore
+                            laboriosam fuga libero repudiandae, quia laborum accusamus voluptatem modi similique
+                            officiis unde id nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                            nihil, recusandae, maxime consequatur tenetur a quis repellat eveniet officia similique aut
+                            dolorem repellendus veritatis quas illum deleniti numquam, corrupti neque! Voluptas odit
+                            repellendus delectus inventore a magni illo debitis sed, ipsum autem provident possimus.Ipsa
+                            iusto aut sed blanditiis veritatis repellendus rerum voluptatum ea eos alias perferendis,
+                            expedita voluptatibus repudiandae.Laboriosam, molestias.Quisquam ab eos, voluptatum
+                            voluptate inventore a facilis.Voluptates fuga labore exercitationem maxime aut.Dicta at
+                            tenetur rerum, magni similique minus id quaerat eveniet consectetur odio repudiandae
+                            perferendis ? </div>
+                        <div class="info-button arrow-link js-show-more-projects">
+                            <span class="info-button__more js-show-more-projects">More info +</span>
+                            <span class="info-button__less js-show-more-projects">Less info -</span>
+                        </div>
+                    </div>
+                    <!-- /Project item -->
+                    <!-- Project item -->
+                    <div class="case-study projects js-project-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="case-study__image js-show-more-projects">
+                            <img class="img-front js-show-more-projects" src="../static/images/case-3.jpeg"
+                                alt="illum consequatur sapiente" loading="lazy">
+                            <img class="img-back js-show-more-projects" src="../static/images/case-6.jpeg"
+                                alt="illum consequatur sapiente" loading="lazy">
+                        </div>
+                        <h3 class="case-study__title js-show-more-projects">illum consequatur sapiente</h3>
+                        <div class="projects__desc"> Ducimus architecto esse aliquid necessitatibus fugiat debitis vel
+                            temporibus ex omnis! Est officia temporibus accusamus error, pariatur quibusdam tempore
+                            tempora aliquid accusantium! </div>
+                        <div class="info-button arrow-link js-show-more-projects">
+                            <span class="info-button__more js-show-more-projects">More info +</span>
+                            <span class="info-button__less js-show-more-projects">Less info -</span>
+                        </div>
+                    </div>
+                    <!-- /Project item -->
+                    <!-- Slideshow project item -->
+                    <div class="case-study projects slideshow js-slideshow js-slideshow_play-on-hover js-project-item"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        <div class="case-study__image js-show-more-projects">
+                            <img class="slideshow__img js-slideshow__img js-show-more-projects"
+                                src="https://picsum.photos/702/800" alt="Slideshow Project (on item hover)"
+                                loading="lazy">
+                            <img class="slideshow__img js-slideshow__img js-show-more-projects"
+                                src="https://picsum.photos/602/700" alt="Slideshow Project (on item hover)"
+                                loading="lazy">
+                            <img class="slideshow__img js-slideshow__img js-show-more-projects"
+                                src="https://picsum.photos/502/600" alt="Slideshow Project (on item hover)"
+                                loading="lazy">
+                            <img class="slideshow__img js-slideshow__img js-show-more-projects"
+                                src="https://picsum.photos/402/500" alt="Slideshow Project (on item hover)"
+                                loading="lazy">
+                        </div>
+                        <h3 class="case-study__title js-show-more-projects">Slideshow Project (on item hover)</h3>
+                        <div class="projects__desc"> Ducimus architecto esse aliquid necessitatibus fugiat debitis vel
+                            temporibus ex omnis! Est officia temporibus accusamus error, pariatur quibusdam tempore
+                            tempora aliquid accusantium! </div>
+                        <div class="info-button arrow-link js-show-more-projects">
+                            <span class="info-button__more js-show-more-projects">More info +</span>
+                            <span class="info-button__less js-show-more-projects">Less info -</span>
+                        </div>
+                    </div>
+                    <!-- /Slideshow project item -->
+                    <!-- Project item -->
+                    <div class="case-study projects js-project-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="case-study__image js-show-more-projects">
+                            <img class="img-front js-show-more-projects" src="../static/images/case-4.jpeg"
+                                alt="Lorem ipsum dolor sit?" loading="lazy">
+                            <img class="img-back js-show-more-projects" src="../static/images/case-1.jpeg"
+                                alt="Lorem ipsum dolor sit?" loading="lazy">
+                        </div>
+                        <h3 class="case-study__title js-show-more-projects">Lorem ipsum dolor sit?</h3>
+                        <div class="projects__desc"> Laudantium dolorem reiciendis itaque, amet quas vel labore
+                            laboriosam fuga libero repudiandae, quia laborum accusamus voluptatem modi similique
+                            officiis unde id nesciunt? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Possimus eius velit modi reprehenderit voluptatum, aut quo repellendus inventore beatae
+                            maiores. Laboriosam enim pariatur ad voluptas eum molestias? Impedit, quaerat reiciendis.
+                        </div>
+                        <div class="info-button arrow-link js-show-more-projects">
+                            <span class="info-button__more js-show-more-projects">More info +</span>
+                            <span class="info-button__less js-show-more-projects">Less info -</span>
+                        </div>
+                    </div>
+                    <!-- /Project item -->
+                    <!-- Project item -->
+                    <div class="case-study projects js-project-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="case-study__image js-show-more-projects">
+                            <img class="img-front js-show-more-projects" src="../static/images/case-5.jpeg"
+                                alt="Repudiandae, cumque" loading="lazy">
+                            <img class="img-back js-show-more-projects" src="../static/images/case-2.jpeg"
+                                alt="Repudiandae, cumque" loading="lazy">
+                        </div>
+                        <h3 class="case-study__title js-show-more-projects">Repudiandae, cumque</h3>
+                        <div class="projects__desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                            repellat aspernatur odit esse, vel eos nemo dicta officiis explicabo ut rem expedita nobis,
+                            possimus corporis ab, repellendus incidunt? Rem, animi. Explicabo voluptatibus aliquam amet
+                            animi voluptate veniam ducimus aliquid molestiae accusamus !Consectetur distinctio iste
+                            accusantium quas, molestias amet vel !Magnam cum sapiente quam delectus pariatur, alias
+                            commodi earum eos tempore. </div>
+                        <div class="info-button arrow-link js-show-more-projects">
+                            <span class="info-button__more js-show-more-projects">More info +</span>
+                            <span class="info-button__less js-show-more-projects">Less info -</span>
+                        </div>
+                    </div>
+                    <!-- /Project item -->
+                    <!-- Project item -->
+                    <div class="case-study projects js-project-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="case-study__image js-show-more-projects">
+                            <img class="img-front js-show-more-projects" src="../static/images/case-6.jpeg"
+                                alt="Amet consectetur adipisicing elit" loading="lazy">
+                            <img class="img-back js-show-more-projects" src="../static/images/case-4.jpeg"
+                                alt="Amet consectetur adipisicing elit" loading="lazy">
+                        </div>
+                        <h3 class="case-study__title js-show-more-projects">Amet consectetur adipisicing elit</h3>
+                        <div class="projects__desc"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Laudantium dolorem reiciendis itaque, amet quas vel labore laboriosam fuga libero
+                            repudiandae, quia laborum accusamus voluptatem modi similique officiis unde id nesciunt?
+                        </div>
+                        <div class="info-button arrow-link js-show-more-projects">
+                            <span class="info-button__more js-show-more-projects">More info +</span>
+                            <span class="info-button__less js-show-more-projects">Less info -</span>
+                        </div>
+                    </div>
+                    <!-- /Project item -->
+                    <!-- Slideshow project item -->
+                    <div class="case-study projects slideshow js-slideshow js-slideshow_play-on-hover js-project-item"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        <div class="case-study__image js-show-more-projects">
+                            <img class="slideshow__img js-slideshow__img js-show-more-projects"
+                                src="https://picsum.photos/703/800" alt="Slideshow Project (on item hover)"
+                                loading="lazy">
+                            <img class="slideshow__img js-slideshow__img js-show-more-projects"
+                                src="https://picsum.photos/603/700" alt="Slideshow Project (on item hover)"
+                                loading="lazy">
+                            <img class="slideshow__img js-slideshow__img js-show-more-projects"
+                                src="https://picsum.photos/503/600" alt="Slideshow Project (on item hover)"
+                                loading="lazy">
+                            <img class="slideshow__img js-slideshow__img js-show-more-projects"
+                                src="https://picsum.photos/403/500" alt="Slideshow Project (on item hover)"
+                                loading="lazy">
+                        </div>
+                        <h3 class="case-study__title js-show-more-projects">Slideshow Project (on item hover)</h3>
+                        <div class="projects__desc"> Ducimus architecto esse aliquid necessitatibus fugiat debitis vel
+                            temporibus ex omnis! Est officia temporibus accusamus error, pariatur quibusdam tempore
+                            tempora aliquid accusantium! </div>
+                        <div class="info-button arrow-link js-show-more-projects">
+                            <span class="info-button__more js-show-more-projects">More info +</span>
+                            <span class="info-button__less js-show-more-projects">Less info -</span>
+                        </div>
+                    </div>
+                    <!-- /Slideshow project item -->
+                    <!-- Project item -->
+                    <div class="case-study projects js-project-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="case-study__image js-show-more-projects">
+                            <img class="img-front js-show-more-projects" src="../static/images/case-3.jpeg"
+                                alt="illum consequatur sapiente" loading="lazy">
+                            <img class="img-back js-show-more-projects" src="../static/images/case-6.jpeg"
+                                alt="illum consequatur sapiente" loading="lazy">
+                        </div>
+                        <h3 class="case-study__title js-show-more-projects">illum consequatur sapiente</h3>
+                        <div class="projects__desc"> Ducimus architecto esse aliquid necessitatibus fugiat debitis vel
+                            temporibus ex omnis! Est officia temporibus accusamus error, pariatur quibusdam tempore
+                            tempora aliquid accusantium! </div>
+                        <div class="info-button arrow-link js-show-more-projects">
+                            <span class="info-button__more js-show-more-projects">More info +</span>
+                            <span class="info-button__less js-show-more-projects">Less info -</span>
+                        </div>
+                    </div>
+                    <!-- /Project item -->
+                    <!-- 
+                <div class="pagination">
+                    <ul class="pagination__list">
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">
+                                First
+                            </a>
+                        </li>
+
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">25</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">26</a>
+                        </li>
+                        <li class="pagination__item active">
+                            <a href="#" class="pagination__link">27</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">28</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">29</a>
+                        </li>
+
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">
+                                Last
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                -->
+                </div>
+                <div class="load-more-inifinte" id="trigger-scroll"></div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- /Main Content -->
+{% endblock %}

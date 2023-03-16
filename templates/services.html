@@ -1,0 +1,366 @@
+{% extends 'base.html' %}
+{% block title %} Services {% endblock %}
+
+{% block content %}
+<main class="main">
+    <section>
+        <div class="hero hero--color hero--purple">
+            <div class="container">
+                <h1 class="js-anim h2 hero__title">We provide the marketing expertise you need to grow your business.
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="we-can-help">
+            <div class="container">
+                <h4 class="h1" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">We can help
+                    with</h4>
+                <div id="js-tabs-area" class="we-can-help__content tab-container">
+                    <div class="we-can-help__left">
+                        <ul role="tablist" class="we-can-help__list">
+                            <li role="tab" aria-controls="service-1" tabindex="0" aria-selected="false"
+                                data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000"> Branding + Logo Design
+                            </li>
+                            <li role="tab" aria-controls="service-2" tabindex="0" aria-selected="false"
+                                data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000"> Social Media
+                                Management </li>
+                            <li role="tab" aria-controls="service-3" tabindex="0" aria-selected="false"
+                                data-aos="fade-in" data-aos-delay="400" data-aos-duration="1000"> Website Design +
+                                Development </li>
+                            <li role="tab" aria-controls="service-4" tabindex="0" aria-selected="false"
+                                data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000"> Creative Services
+                            </li>
+                            <li role="tab" aria-controls="service-5" tabindex="0" aria-selected="false"
+                                data-aos="fade-in" data-aos-delay="600" data-aos-duration="1000"> SEO + SEM </li>
+                            <li role="tab" aria-controls="service-6" tabindex="0" aria-selected="false"
+                                data-aos="fade-in" data-aos-delay="700" data-aos-duration="1000"> Training + Speaking
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="we-can-help__right tab-panes" data-aos="fade-in" data-aos-duration="2000"
+                        data-aos-easing="ease-in-sine">
+                        <div id="service-0" role="tabpanel" aria-expanded="true">
+                            <img src="../static/images/services-rollover-placeholder.png" alt="">
+                        </div>
+                        <div id="service-1" role="tabpanel" aria-expanded="false">
+                            <img src="../static/images/branding.png" alt="">
+                        </div>
+                        <div id="service-2" role="tabpanel" aria-expanded="false">
+                            <img src="../static/images/social-media.png" alt="">
+                        </div>
+                        <div id="service-3" role="tabpanel" aria-expanded="false">
+                            <img src="../static/images/website-design.png" alt="">
+                        </div>
+                        <div id="service-4" role="tabpanel" aria-expanded="false">
+                            <img src="../static/images/creative.png" alt="">
+                        </div>
+                        <div id="service-5" role="tabpanel" aria-expanded="false">
+                            <img src="../static/images/seo.png" alt="">
+                        </div>
+                        <div id="service-6" role="tabpanel" aria-expanded="false">
+                            <img src="../static/images/training.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        class TabController {
+            constructor(container) {
+                this.container = document.querySelector(container);
+                this.tablist = this.container.querySelector('[role=tablist]');
+                this.tabs = this.container.querySelectorAll('[role=tab]');
+                this.tabpanels = this.container.querySelectorAll('[role=tabpanel]');
+                this.activeTab = this.container.querySelector('[role=tab][aria-selected=true]');
+                this._addEventListeners();
+            }
+            // Private function to set event listeners
+            _addEventListeners() {
+                for (let tab of this.tabs) {
+                    tab.addEventListener('mouseover', e => {
+                        e.preventDefault();
+                        this.setActiveTab(tab.getAttribute('aria-controls'));
+                    });
+                    tab.addEventListener('keyup', e => {
+                        if (e.keyCode == 13 || e.keyCode == 32) { // return or space
+                            e.preventDefault();
+                            this.setActiveTab(tab.getAttribute('aria-controls'));
+                        }
+                    })
+                }
+                this.tablist.addEventListener('keyup', e => {
+                    switch (e.keyCode) {
+                        case 35: // end key
+                            e.preventDefault();
+                            this.setActiveTab(this.tabs[this.tabs.length - 1].getAttribute('aria-controls'));
+                            break;
+                        case 36: // home key
+                            e.preventDefault();
+                            this.setActiveTab(this.tabs[0].getAttribute('aria-controls'));
+                            break;
+                        case 37: // left arrow
+                            e.preventDefault();
+                            let previous = [...this.tabs].indexOf(this.activeTab) - 1;
+                            previous = previous >= 0 ? previous : this.tabs.length - 1;
+                            this.setActiveTab(this.tabs[previous].getAttribute('aria-controls'));
+                            break;
+                        case 39: // right arrow
+                            e.preventDefault();
+                            let next = [...this.tabs].indexOf(this.activeTab) + 1;
+                            next = next < this.tabs.length ? next : 0
+                            this.setActiveTab(this.tabs[next].getAttribute('aria-controls'));
+                            break;
+                    }
+                })
+            }
+            // Public function to set the tab by id
+            // This can be called by the developer too.
+            setActiveTab(id) {
+                for (let tab of this.tabs) {
+                    if (tab.getAttribute('aria-controls') == id) {
+                        tab.setAttribute('aria-selected', "true");
+                        tab.focus();
+                        this.activeTab = tab;
+                    }
+                    else {
+                        tab.setAttribute('aria-selected', "false");
+                    }
+                }
+                for (let tabpanel of this.tabpanels) {
+                    if (tabpanel.getAttribute('id') == id) {
+                        tabpanel.setAttribute('aria-expanded', "true");
+                    }
+                    else {
+                        tabpanel.setAttribute('aria-expanded', "false");
+                    }
+                }
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            // tabs init
+            const exampleTabController = new TabController('#js-tabs-area');
+        });
+
+    </script>
+    <section>
+        <div class="container mb-100">
+            <h5 class="h5 about-us__subtitle" data-aos="fade-in" data-aos-delay="2000" data-aos-duration="1500">Do you
+                need to utilise all the marketing services we offer, or perhaps just one or two of them? Maybe you
+                aren’t sure what you should be doing next? That’s OK too! Get in touch so we can start to banter with
+                you and work out the best way to grow your business.</h5>
+        </div>
+    </section>
+    <section>
+        <div class="services-person about-team border-top-separator border-bottom-separator">
+            <div class="about-team__left about-col-left">
+                <div class="about-team__left__b">
+                    <h3 class="h3" data-aos="fade-up" data-aos-duration="1000">Education + Training</h3>
+                    <div class="plaintext font-24 mt-20" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="750">
+                        <p> Valentina Borbone, Banter CEO, has been a digital marketing trainer since 2008. </p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
+                        <a href="#" class="arrow-link hover-white">
+                            <span> See the whole team </span>
+                            <svg class="sprite-icon">
+                                <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="about-team__image-wrapper about-col-right" data-aos="fade-in" data-aos-duration="3000"
+                data-aos-delay="1000">
+                <img src="../static/images/Val_Colour-wide-website.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="about-how-we-work about-cols">
+            <div class="about-cols__container container">
+                <div class="about-cols__row">
+                    <div class="about-col-left about-how-we-work__left">
+                        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+                            <h3 class="h3">People talk</h3>
+                            <div class="plaintext mt-20">
+                                <p> This is what they have <br> had to say about us </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-col-right about-how-we-work__right">
+                        <div class="container" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1000">
+                            <div class="plaintext max-1075">
+                                <p> Picking a firm to design and build a website for a business is terrifying. Too many
+                                    choices and no obvious way to pick. And so it is with such relief that I found the
+                                    Banter Group. From the first email they just "got it". They communicated well, they
+                                    did what they said they would on time and with polish. The end result is exactly
+                                    what I wanted...with a little dash of special sauce to make it even better. Great
+                                    work </p>
+                            </div>
+                            <div class="mt-30">
+                                <strong> Max Thomson </strong>
+                            </div>
+                            <div class="text-gray mt-5 font-16">
+                                <p>Spitfire</p>
+                            </div>
+                            <div class="about-how-we-work__comma">
+                                <img src="../static/images/comma-1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="we-work-with">
+            <div class="container">
+                <h5 class="h6 text-uppercase" data-aos="fade-in" data-aos-duration="1500">Humans we work with</h5>
+                <div class="we-work-with__logos">
+                    <a href="#" class="we-work-with__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="../static/images/Banter-client-logos-1.png" alt="">
+                    </a>
+                    <a href="#" class="we-work-with__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="../static/images/Banter-client-logos-2.png" alt="">
+                    </a>
+                    <a href="#" class="we-work-with__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="../static/images/Banter-client-logos-3.png" alt="">
+                    </a>
+                    <a href="#" class="we-work-with__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="../static/images/Banter-client-logos-4.png" alt="">
+                    </a>
+                    <a href="#" class="we-work-with__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="../static/images/Banter-client-logos-5.png" alt="">
+                    </a>
+                    <a href="#" class="we-work-with__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="../static/images/Banter-client-logos-6.png" alt="">
+                    </a>
+                    <a href="#" class="we-work-with__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="../static/images/Banter-client-logos-7.png" alt="">
+                    </a>
+                    <a href="#" class="we-work-with__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="../static/images/Banter-client-logos-8.png" alt="">
+                    </a>
+                    <a href="#" class="we-work-with__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="../static/images/Banter-client-logos-9.png" alt="">
+                    </a>
+                    <a href="#" class="we-work-with__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="../static/images/Banter-client-logos-10.png" alt="">
+                    </a>
+                    <a href="#" class="we-work-with__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="../static/images/Banter-client-logos-11.png" alt="">
+                    </a>
+                    <a href="#" class="we-work-with__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="../static/images/Banter-client-logos-12.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="all-humans border-bottom-separator">
+            <div class="container">
+                <h5 class="h6 text-uppercase" data-aos="fade-in" data-aos-duration="1500">All humans by SECTOR</h5>
+                <div class="all-humans__sectors">
+                    <div class="all-humans__sector">
+                        <h6 class="all-humans__title "> Real Estate </h6>
+                        <ul class="all-humans__list">
+                            <li>Lorem ipsum</li>
+                            <li>dolor sit amet</li>
+                            <li>consectetur adipisicing</li>
+                            <li>Neque itaque nulla</li>
+                            <li>Eum iusto inventore</li>
+                            <li>Numquam placeat tempora</li>
+                            <li>eos neque reiciendis</li>
+                            <li>dolore cumque</li>
+                        </ul>
+                    </div>
+                    <div class="all-humans__sector">
+                        <h6 class="all-humans__title "> Technology </h6>
+                        <ul class="all-humans__list">
+                            <li>Lorem ipsum</li>
+                            <li>dolor sit amet</li>
+                            <li>consectetur adipisicing</li>
+                            <li>Neque itaque nulla</li>
+                            <li>Eum iusto inventore</li>
+                            <li>Numquam placeat tempora</li>
+                        </ul>
+                    </div>
+                    <div class="all-humans__sector">
+                        <h6 class="all-humans__title "> Financial Services </h6>
+                        <ul class="all-humans__list">
+                            <li>Lorem ipsum</li>
+                            <li>dolor sit amet</li>
+                            <li>consectetur adipisicing</li>
+                            <li>Neque itaque nulla</li>
+                            <li>Eum iusto inventore</li>
+                            <li>Numquam placeat tempora</li>
+                        </ul>
+                    </div>
+                    <div class="all-humans__sector">
+                        <h6 class="all-humans__title "> Trades </h6>
+                        <ul class="all-humans__list">
+                            <li>Lorem ipsum</li>
+                            <li>dolor sit amet</li>
+                            <li>consectetur adipisicing</li>
+                            <li>Neque itaque nulla</li>
+                            <li>Eum iusto inventore</li>
+                            <li>Numquam placeat tempora</li>
+                            <li>dolore cumque</li>
+                        </ul>
+                    </div>
+                    <div class="all-humans__sector">
+                        <h6 class="all-humans__title "> Not for Profit </h6>
+                        <ul class="all-humans__list">
+                            <li>Lorem ipsum</li>
+                            <li>dolor sit amet</li>
+                            <li>consectetur adipisicing</li>
+                            <li>Neque itaque nulla</li>
+                            <li>Eum iusto inventore</li>
+                            <li>Numquam placeat tempora</li>
+                            <li>eos neque reiciendis</li>
+                        </ul>
+                    </div>
+                    <div class="all-humans__sector">
+                        <h6 class="all-humans__title "> Building &amp; Construction </h6>
+                        <ul class="all-humans__list">
+                            <li>Lorem ipsum</li>
+                            <li>dolor sit amet</li>
+                            <li>consectetur adipisicing</li>
+                            <li>Neque itaque nulla</li>
+                            <li>Eum iusto inventore</li>
+                            <li>Numquam placeat tempora</li>
+                        </ul>
+                    </div>
+                    <div class="all-humans__sector">
+                        <h6 class="all-humans__title "> Hospitality </h6>
+                        <ul class="all-humans__list">
+                            <li>Lorem ipsum</li>
+                            <li>dolor sit amet</li>
+                            <li>consectetur adipisicing</li>
+                            <li>Neque itaque nulla</li>
+                            <li>Eum iusto inventore</li>
+                            <li>Numquam placeat tempora</li>
+                            <li>eos neque reiciendis</li>
+                            <li>dolore cumque</li>
+                        </ul>
+                    </div>
+                    <div class="all-humans__sector">
+                        <h6 class="all-humans__title "> Small Business </h6>
+                        <ul class="all-humans__list">
+                            <li>Lorem ipsum</li>
+                            <li>dolor sit amet</li>
+                            <li>consectetur adipisicing</li>
+                            <li>Neque itaque nulla</li>
+                            <li>Eum iusto inventore</li>
+                            <li>Numquam placeat tempora</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

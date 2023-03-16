@@ -1,0 +1,281 @@
+{% extends "base.html" %}
+{% block title %}Case Study {% endblock %}
+
+{% block content %}
+<!-- Main Content -->
+<main class="main">
+    <section>
+        <div class="hero hero--color hero--black">
+            <div class="container">
+                <h1 class="js-anim h2 hero__title">We work with good humans from diverse industries</h1>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="case-study__page">
+            <div class="container">
+                <div class="filter" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                    <ul class="filter__list">
+                        <li class="filter__item"> Filter Case Studies </li>
+                        <li class="filter__item">
+                            <a href="#">All</a>
+                        </li>
+                        <li class="filter__item">
+                            <a href="#">Social Media Management</a>
+                        </li>
+                        <li class="filter__item">
+                            <a href="#">Creative Services</a>
+                        </li>
+                        <li class="filter__item">
+                            <a href="#">Website Design + Development</a>
+                        </li>
+                        <li class="filter__item">
+                            <a href="#">Branding + Logo Design</a>
+                        </li>
+                        <li class="filter__item">
+                            <a href="#">Insights + Marketing Strategy</a>
+                        </li>
+                    </ul>
+                    <select class="filter__select">
+                        <option value="0">All</option>
+                        <option value="1">Social Media Management</option>
+                        <option value="2">Creative Services</option>
+                        <option value="3">Website Design + Development</option>
+                        <option value="4">Branding + Logo Design</option>
+                        <option value="5">Insights + Marketing Strategy</option>
+                    </select>
+                </div>
+                <div class="case-study__grid" id="case-studies-grid">
+                    <a href="./case-study-individual.html" class="case-study" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <div class="case-study__image">
+                            <img src="../static/images/AJK-outfitters-casestudy-tile.jpeg" alt="AJK Outfitters">
+                        </div>
+                        <h3 class="case-study__title">AJK Outfitters</h3>
+                        <div class="arrow-link">
+                            <span> See what we did </span>
+                            <svg class="sprite-icon">
+                                <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="./case-study-individual.html" class="case-study" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <div class="case-study__image">
+                            <img src="../static/images/Laava-Casestudy-tile-2.jpeg" alt="Laava">
+                        </div>
+                        <h3 class="case-study__title">Laava</h3>
+                        <div class="arrow-link">
+                            <span> See what we did </span>
+                            <svg class="sprite-icon">
+                                <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="./case-study-individual.html" class="case-study" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <div class="case-study__image">
+                            <img src="../static/images/Pavilion-Cosmetic-Casestudy-tile-2.jpeg" alt="Pavilion">
+                        </div>
+                        <h3 class="case-study__title">Pavilion</h3>
+                        <div class="arrow-link">
+                            <span> See what we did </span>
+                            <svg class="sprite-icon">
+                                <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="./case-study-individual.html" class="case-study" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <div class="case-study__image">
+                            <img src="../static/images/SHFWA-Casestudy-tile-image-2.jpeg" alt="SHFWA">
+                        </div>
+                        <h3 class="case-study__title">SHFWA</h3>
+                        <div class="arrow-link">
+                            <span> See what we did </span>
+                            <svg class="sprite-icon">
+                                <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="./case-study-individual.html" class="case-study" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <div class="case-study__image">
+                            <img src="../static/images/TCI-Casestudy-large-hero-banner-1.jpeg" alt="TCI">
+                        </div>
+                        <h3 class="case-study__title">TCI</h3>
+                        <div class="arrow-link">
+                            <span> See what we did </span>
+                            <svg class="sprite-icon">
+                                <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="./case-study-individual.html" class="case-study" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <div class="case-study__image">
+                            <img src="../static/images/Timms-Casestudy-hero-banner-1.jpeg" alt="Timms">
+                        </div>
+                        <h3 class="case-study__title">Timms</h3>
+                        <div class="arrow-link">
+                            <span> See what we did </span>
+                            <svg class="sprite-icon">
+                                <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <!--
+                <div class="pagination">
+                    <ul class="pagination__list">
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">
+                                First
+                            </a>
+                        </li>
+
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">25</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">26</a>
+                        </li>
+                        <li class="pagination__item active">
+                            <a href="#" class="pagination__link">27</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">28</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">29</a>
+                        </li>
+
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">
+                                Last
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                -->
+                </div>
+                <div class="load-more-inifinte" id="trigger-scroll"></div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- /Main Content -->
+
+<!-- <script>
+    // see a different implementation of load more/infinite scroll in blog page
+    const container = document.getElementById('case-studies-grid');
+    var triggerScroll = document.getElementById('trigger-scroll');
+
+    function elementInViewport(triggerScroll) {
+        var bounding = triggerScroll.getBoundingClientRect();
+        var triggerScrollHeight = triggerScroll.offsetHeight;
+        var triggerScrollWidth = triggerScroll.offsetWidth;
+        if (bounding.top >= -triggerScrollHeight && bounding.left >= -triggerScrollWidth && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) + triggerScrollWidth && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + triggerScrollHeight) {
+            // console.log('Element is in the viewport!');
+            return true;
+        }
+        else {
+            return false;
+            // console.log('Element is NOT in the viewport!');
+        }
+    }
+    window.addEventListener('scroll', () => {
+        if (elementInViewport(triggerScroll)) {
+            // this is basic; I don't know what specific logic is going to be used on back-end, I'm assuming ajax
+            setTimeout(createPost('AJK-outfitters-casestudy-tile.jpeg', 'Case Study Title', "./case-study-individual.html"), 500);
+            setTimeout(createPost('Laava-Casestudy-tile-2.jpeg', 'Another Case Study Title', "./case-study-individual.html"), 500);
+            setTimeout(createPost('Pavilion-Cosmetic-Casestudy-tile-2.jpeg', 'Lorem Ipsum', "./case-study-individual.html"), 500);
+            setTimeout(createPost('SHFWA-Casestudy-tile-image-2.jpeg', 'Dolor Sit Amet', "./case-study-individual.html"), 500);
+        }
+    });
+
+    function createPost(img, title, url) {
+        const post = document.createElement('a');
+        post.className = 'case-study';
+        post.href = url;
+        post.setAttribute("data-aos", "fade-up");
+        post.setAttribute("data-aos-duration", "1000");
+        post.innerHTML = `
+        <div class="case-study__image">
+            <img src="./img/${img}" alt="${title}">
+        </div>
+
+        <h3 class="case-study__title">${title}</h3>
+        <div class="arrow-link">
+            <span> See what we did </span>
+            <svg class="sprite-icon">
+                <use xlink:href="../static/images/svg/sprite.svg#long-arrow-right"></use>
+            </svg>
+        </div>
+         
+        `;
+        container.appendChild(post);
+    }
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script>
+    // Wrap every letter in a span
+    const animatedTexts = document.querySelectorAll('.js-anim');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animated");
+                const letters = entry.target.querySelectorAll('.letter');
+                anime.timeline(
+                    {
+                        loop: false
+                    }).add(
+                        {
+                            targets: letters,
+                            opacity: [
+                                0, 1
+                            ],
+                            easing: "easeInOutQuad",
+                            duration: 1250,
+                            delay: (el, i) => 50 * (i + 1)
+                        }).add(
+                            {
+                                targets: entry.target,
+                                opacity: 1,
+                                duration: 1000,
+                                easing: "easeOutExpo",
+                                delay: 500
+                            });
+                observer.unobserve(entry.target)
+            }
+        })
+    },
+        {
+            rootMargin: "-100px"
+        })
+    if (animatedTexts) {
+        animatedTexts.forEach((animatedText) => {
+            animatedText.innerHTML = animatedText.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+            observer.observe(animatedText)
+        });
+    }
+
+</script>
+<!-- /Custom Scripts -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init(
+        {
+            once: true, // animation should happen only once - while scrolling down
+            offset: 50 // offset (in px) from the original trigger point
+        });
+
+</script>
+<!-- page loader -->
+<script>
+    const pageLoader = document.getElementById("pageLoader");
+    pageLoader.classList.add("page-loaded")
+
+</script> -->
+{% endblock %}

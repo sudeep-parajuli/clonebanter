@@ -1,0 +1,251 @@
+{% extends "base.html" %}
+{% block title%}Contact {% endblock%}
+
+{% block content %}
+<!-- Main Content -->
+<main class="main">
+    <section>
+        <div class="hero hero--simple hero--parallax hero--mask"
+            style="background-image: url(../static/images/banter-hero-image-contact-page-placeholder.jpg)">
+            <div class="hero--parallax__content">
+                <div class="container">
+                    <h1 class="js-anim h2 hero__title">Go on. We'd love to get into some banter with you.</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="bg-white contact-info">
+            <div class="container">
+                <div class="section-cols-3 section-cols-3_justify_start">
+                    <div class="section-cols-3__left section-cols-3__left_thin">
+                        <h3 class="h3 mb-30" data-aos="fade-in" data-aos-duration="1000"> Get in touch </h3>
+                        <h6 class="h5">
+                            <a class="text-underline hover-cyan fw-500"
+                                href="mailto:hello@bantergroup.com.au">hello@bantergroup.com.au</a>
+                        </h6>
+                        <h6 class="h5 mt-15">
+                            <a class="hover-cyan fw-500" href="tel:1300 070 688">1300 070 688</a>
+                        </h6>
+                        <div class="main-menu__social in-page-social">
+                            <a href="#" class="main-menu__social-icon" data-aos="fade-up" data-aos-duration="1000"
+                                data-aos-delay="250">
+                                <svg class="sprite-icon">
+                                    <use xlink:href="../static/images/svg/sprite.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="main-menu__social-icon" data-aos="fade-up" data-aos-duration="1000"
+                                data-aos-delay="500">
+                                <svg class="sprite-icon">
+                                    <use xlink:href="../static/images/svg/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="main-menu__social-icon" data-aos="fade-up" data-aos-duration="1000"
+                                data-aos-delay="750">
+                                <svg class="sprite-icon">
+                                    <use xlink:href="../static/images/svg/sprite.svg#youtube"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="main-menu__social-icon" data-aos="fade-up" data-aos-duration="1000"
+                                data-aos-delay="1000">
+                                <svg class="sprite-icon">
+                                    <use xlink:href="../static/images/svg/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="section-cols-3__right section-cols-3__right_thin" data-aos="fade-in"
+                        data-aos-duration="1000" data-aos-delay="1000">
+                        <h3 class="h3 mb-30"> Find us </h3>
+                        <div class="h5">
+                            <div>
+                                <strong>Mittagong Office</strong>
+                            </div>
+                            <div class="fw-500 mt-10"> 25/6-10 Owen Street </div>
+                            <div class="fw-500 mt-10"> Mittagong NSW 2575 </div>
+                            <div class="mt-30">
+                                <strong>Sydney Office</strong>
+                            </div>
+                            <div class="fw-500 mt-10"> Level 16, No. 1 Martin Place Sydney NSW 2000 </div>
+                        </div>
+                    </div>
+                    <div class="section-cols-3__aside mt-50" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="1000">
+                        <a href="https://ausowned.com.au/directory/entry/3626/?gvid=22071" target="_blank"
+                            class="contact-info__cert">
+                            <img src="../static/images/auscert-logo.svg" class="contact-info__cert-logo">
+                        </a>
+                    </div>
+                    <div class="section-cols-3__left section-cols-3__left_thin mt-75">
+                        <h3 class="h3 mb-30" data-aos="fade-up" data-aos-duration="1000"> How to get the <br> banter
+                            started </h3>
+                    </div>
+                    <div class="section-cols-3__right section-cols-3__right_thin mt-75">
+                        <div class="plaintext">
+                            <h5 data-aos="fade-up" data-aos-duration="1000"> 1. Get in touch </h5>
+                            <p data-aos="fade-up" data-aos-duration="1000"> You send us an email or give us a call, we
+                                promise you will be greeted by a friendly, knowledgeable member of the Banter team. </p>
+                            <h5 data-aos="fade-up" data-aos-duration="1000"> 2. We’ll contact you </h5>
+                            <p data-aos="fade-up" data-aos-duration="1000"> We will review your enquiry, then get in
+                                touch with you either over the phone or via email to find out more and perhaps arrange a
+                                face-to-face chat. </p>
+                            <h5 data-aos="fade-up" data-aos-duration="1000"> 3. We banter </h5>
+                            <p data-aos="fade-up" data-aos-duration="1000"> We have some banter, take on-board your
+                                individual business and marketing needs and agree some next steps, that may include a
+                                no-obligation proposal for you to consider. </p>
+                            <h5 data-aos="fade-up" data-aos-duration="1000"> 4. We have lift off </h5>
+                            <p data-aos="fade-up" data-aos-duration="1000"> You say ‘yes!’ to working with us and find
+                                out why marketing your business the Banter way works. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="contact-form__section">
+            <div class="container">
+                <h3 class="h3" data-aos="fade-up" data-aos-duration="1000">Let’s start a conversation</h3>
+                <div class="contact-form__area" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="250">
+                    <div class="contact-form mt-40">
+                        <div class="flex-box">
+                            <div class="form-field w-48">
+                                <!-- w-48 = width: 48% for desktop; works inside .felx-box -->
+                                <input type="text" class="input" placeholder="First Name">
+                            </div>
+                            <div class="form-field w-48">
+                                <input type="text" class="input" placeholder="Last Name">
+                            </div>
+                            <div class="form-field w-100">
+                                <input type="text" class="input" placeholder="I’m from (Company name)">
+                            </div>
+                            <div class="form-field w-100">
+                                <textarea class="textarea" placeholder="My message"></textarea>
+                            </div>
+                            <button class="arrow-link hover-cyan mt-25">
+                                <span> Start a conversation </span>
+                                <svg class="sprite-icon">
+                                    <use xlink:href="img/svg/sprite.svg#long-arrow-right"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="contact-form__decoration">
+                        <img src="../static/images/comma-empty-green.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="contact-map">
+            <div id="map"></div>
+        </div>
+    </section>
+</main>
+<!-- /Main Content -->
+
+<!-- Custom Scripts -->
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtoTSF1eVNQFiTgCR__oLNDBb-QTiF7O8&language=en&callback=initMap&libraries=&v=weekly"
+    async></script>
+<script>
+    function initMap() {
+        const map = new google.maps.Map(document.getElementById("map"),
+            {
+                center:
+                {
+                    lat: -34.44431868341587,
+                    lng: 150.43299295867251
+                },
+                zoom: 17,
+                disableDefaultUI: true,
+                styles: [
+                    {
+                        "stylers": [
+                            {
+                                "saturation": -100
+                            }]
+                    }]
+            });
+        const svgMarker = {
+            path: "M256,0C148.48,0,61,87.48,61,195c0,42.55,13.44,82.98,38.9,116.9l144.08,194.051c0.36,0.47,0.91,0.65,1.31,1.07 c7.2,7.71,17.59,5.77,22.72-1.07C309.5,450.591,385.55,347.2,414.79,308.2c0,0,0.01-0.03,0.02-0.05l0.18-0.24 C438.55,274.81,451,235.77,451,195C451,87.48,363.52,0,256,0z M256,300.2c-57.89,0-105.2-47.31-105.2-105.2S198.11,89.8,256,89.8 S361.2,137.11,361.2,195S313.89,300.2,256,300.2z",
+            fillColor: "#000",
+            fillOpacity: 1,
+            strokeWeight: 0,
+            rotation: 0,
+            scale: .1,
+            anchor: new google.maps.Point(15, 30)
+        };
+        new google.maps.Marker(
+            {
+                position: map.getCenter(),
+                icon: svgMarker,
+                map: map
+            });
+    }
+    window.initMap = initMap;
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script>
+    // Wrap every letter in a span
+    const animatedTexts = document.querySelectorAll('.js-anim');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animated");
+                const letters = entry.target.querySelectorAll('.letter');
+                anime.timeline(
+                    {
+                        loop: false
+                    }).add(
+                        {
+                            targets: letters,
+                            opacity: [
+                                0, 1
+                            ],
+                            easing: "easeInOutQuad",
+                            duration: 1250,
+                            delay: (el, i) => 50 * (i + 1)
+                        }).add(
+                            {
+                                targets: entry.target,
+                                opacity: 1,
+                                duration: 1000,
+                                easing: "easeOutExpo",
+                                delay: 500
+                            });
+                observer.unobserve(entry.target)
+            }
+        })
+    },
+        {
+            rootMargin: "-100px"
+        })
+    if (animatedTexts) {
+        animatedTexts.forEach((animatedText) => {
+            animatedText.innerHTML = animatedText.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+            observer.observe(animatedText)
+        });
+    }
+
+</script>
+<!-- /Custom Scripts -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init(
+        {
+            once: true, // animation should happen only once - while scrolling down
+            offset: 50 // offset (in px) from the original trigger point
+        });
+
+</script>
+<!-- page loader -->
+<script>
+    const pageLoader = document.getElementById("pageLoader");
+    pageLoader.classList.add("page-loaded")
+
+</script>
+{% endblock %}

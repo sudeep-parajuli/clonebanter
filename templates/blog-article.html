@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block title %}Blog Article {% endblock %}
+
+{% block content %}
+<main class="main">
+    <section>
+        <div class="hero hero--color hero--black">
+            <div class="container">
+                <h1 class="js-anim h2 hero__title">Covid hits again</h1>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="blog-article__page">
+            <div class="container">
+                <div class="blog-article__wrap">
+                    <article class="blog-article__main">
+                        <div class="plaintext">
+                            <h3>Here we go again...</h3>
+                            <p> The COVID-19 pandemic isn’t over yet. That’s for sure. As the situation continues to
+                                unfold, people throughout Australia are adapting to the escalating situation. Our hearts
+                                go out to those business owners who may be most heavily impacted by the latest
+                                lockdowns. The restaurant owners, the bricks and mortar retailers, the tourism
+                                operators… the list goes on. A lot of people are dealing with a lot of uncertainty right
+                                now. </p>
+                            <img src="../static/images/blog-1.jpeg" alt="Blog image">
+                            <h6>1. Communicate with your team</h6>
+                            <p> What does this latest lockdown mean for them? What procedures or processes have you put
+                                in place in the last 24 hours? How can you help to keep your team feeling connected,
+                                even if it is virtually? The Banter Group team has been on Google Hangouts 👨 for
+                                several sessions today to make sure we are still on-track with our deadlines….and
+                                comparing ‘raiding the pantry and keeping the kids quiet’ stories. </p>
+                            <!-- ratio-16x9 || ratio-4x3 || ratio-21x9 || ratio-1x1 -->
+                            <div class="ratio ratio-16x9">
+                                <iframe
+                                    src="https://www.youtube.com/embed/-0zhIK8HqAc?showinfo=0&enablejsapi=1&rel=0&loop=1&playsinline=1&playlist=-0zhIK8HqAc"
+                                    allowfullscreen
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    title="YouTube video" loading="lazy"></iframe>
+                            </div>
+                            <blockquote>
+                                <p>​​<i>“Clients are respectful of our experience and value our contribution. They use
+                                        as much of us as they need, when they need us.”</i></p>
+                            </blockquote>
+                            <h6>2. Communicate with your clients and customers</h6>
+                            <p> What does this latest lockdown mean for them? What procedures or processes have you put
+                                in place in the last 24 hours? How can you help to keep your team feeling connected,
+                                even if it is virtually? The Banter Group team has been on Google Hangouts 👨 for
+                                several sessions today to make sure we are still on-track with our deadlines….and
+                                comparing ‘raiding the pantry and keeping the kids quiet’ stories. </p>
+                            <img class="img-padding" src="../static/images/blog-1.jpeg" alt="Blog image (with padding)">
+                            <h6>3. Marketing tactics to try</h6>
+                            <p> What does this latest lockdown mean for them? What procedures or processes have you put
+                                in place in the last 24 hours? How can you help to keep your team feeling connected,
+                                even if it is virtually? The Banter Group team has been on Google Hangouts 👨 for
+                                several sessions today to make sure we are still on-track with our deadlines….and
+                                comparing ‘raiding the pantry and keeping the kids quiet’ stories. </p>
+                        </div>
+                    </article>
+                    <aside class="blog-article__sidebar">
+                        <h4 class="h4">More things <br> we talk about</h4>
+                        <div class="blog-article__sidebar__list">
+                            <a class="blog-element" href="./blog-article.html" data-aos="fade-in"
+                                data-aos-duration="1500">
+                                <div class="blog-element__image"><img src="./img/blog-2.jpeg" alt=""></div>
+                                <h5 class="blog-element__title">Vel, placeat id similique beatae eligendi!</h5>
+                            </a>
+                            <a class="blog-element" href="./blog-article.html" data-aos="fade-in"
+                                data-aos-duration="1500">
+                                <div class="blog-element__image"><img src="../static/images/blog-3.jpeg" alt=""></div>
+                                <h5 class="blog-element__title">Amet consectetur adipisicing elit</h5>
+                            </a>
+                            <a class="blog-element" href="./blog-article.html" data-aos="fade-in"
+                                data-aos-duration="1500">
+                                <h5 class="blog-element__title"> Delectus, omnis quibusdam</h5>
+                            </a>
+                            <a class="blog-element" href="./blog-article.html" data-aos="fade-in"
+                                data-aos-duration="1500">
+                                <h5 class="blog-element__title"> Voluptatem incidunt obcaecati est</h5>
+                            </a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
