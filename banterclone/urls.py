@@ -24,11 +24,14 @@ urlpatterns = [
     path("services/", views.Services.as_view(), name="services"),
     path("blog/", views.BlogArticle.as_view(), name="blog"),
     path("casestudy/", views.CaseStudy.as_view(), name="casestudy"),
-    path("projects/", views.Projects.as_view(), name="projects"),
+    path("projects/", views.Project.as_view(), name="project"),
     path("services-detail/", views.ServicesDetail.as_view(), name="services-detail"),
     path("terms/", views.Terms.as_view(), name="terms"),
     path("casestudyindividual", views.CaseStudyIndividual.as_view(), name="case-study-individual"),
     path("contact/", views.Contact.as_view(), name="contact"),
     path("404", views.Error404.as_view(), name="404"),    
     path('admin/', admin.site.urls),
+    path("team/", views.Team.as_view(), name="team"),
+    path("accounts/", include("accounts.urls", namespace="accounts")),
+    path("createcontact/", include("banter_app.api.urls", namespace="createcontact"))    
 ]

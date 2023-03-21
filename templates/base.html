@@ -58,7 +58,7 @@
                 <div class="main-header__container container">
                     <div class="main-header__content">
                         <div class="main-header__logo">
-                            <a href="/" class="main-header__logo-link">
+                            <a href="{% url 'home' %}" class="main-header__logo-link">
                                 <img src="../static/images/logo.svg" class="main-header__logo-img" alt="Logo">
                             </a>
                         </div>
@@ -75,28 +75,28 @@
                             <div class="main-menu__inner">
                                 <ul class="main-menu__list js-main-menu__list">
                                     <li class="main-menu__item active">
-                                        <a href="/" class="main-menu__link"> Home </a>
+                                        <a href="{% url 'home' %}" class="main-menu__link"> Home </a>
                                     </li>
                                     <li class="main-menu__item  ">
-                                        <a href="./about.html" class="main-menu__link"> About </a>
+                                        <a href="{% url 'about' %}" class="main-menu__link"> About </a>
                                     </li>
                                     <li class="main-menu__item  ">
-                                        <a href="./team.html" class="main-menu__link"> Team </a>
+                                        <a href="{% url 'team' %}" class="main-menu__link"> Team </a>
                                     </li>
                                     <li class="main-menu__item  ">
-                                        <a href="./services.html" class="main-menu__link"> Services </a>
+                                        <a href="{% url 'services' %}" class="main-menu__link"> Services </a>
                                     </li>
                                     <li class="main-menu__item  ">
-                                        <a href="./case-study.html" class="main-menu__link"> Case Studies </a>
+                                        <a href="{% url 'casestudy' %}" class="main-menu__link"> Case Studies </a>
                                     </li>
                                     <li class="main-menu__item  ">
-                                        <a href="./projects.html" class="main-menu__link"> Projects </a>
+                                        <a href="{% url 'project' %}" class="main-menu__link"> Projects </a>
                                     </li>
                                     <li class="main-menu__item  ">
-                                        <a href="./blog.html" class="main-menu__link"> News </a>
+                                        <a href="{% url 'blog' %}" class="main-menu__link"> News </a>
                                     </li>
                                     <li class="main-menu__item  ">
-                                        <a href="./contact.html" class="main-menu__link"> Contact </a>
+                                        <a href="{% url 'contact' %}" class="main-menu__link"> Contact </a>
                                     </li>
                                 </ul>
                             </div>
@@ -113,22 +113,22 @@
                             <div class="main-menu__social">
                                 <a href="#" class="main-menu__social-icon">
                                     <svg class="sprite-icon">
-                                        <use xlink:href="img/svg/sprite.svg#linkedin"></use>
+                                        <use xlink:href="../static/images/svg/sprite.svg#linkedin"></use>
                                     </svg>
                                 </a>
                                 <a href="#" class="main-menu__social-icon">
                                     <svg class="sprite-icon">
-                                        <use xlink:href="img/svg/sprite.svg#instagram"></use>
+                                        <use xlink:href="../static/images/svg/sprite.svg#instagram"></use>
                                     </svg>
                                 </a>
                                 <a href="#" class="main-menu__social-icon">
                                     <svg class="sprite-icon">
-                                        <use xlink:href="img/svg/sprite.svg#youtube"></use>
+                                        <use xlink:href="../static/images/svg/sprite.svg#youtube"></use>
                                     </svg>
                                 </a>
                                 <a href="#" class="main-menu__social-icon">
                                     <svg class="sprite-icon">
-                                        <use xlink:href="img/svg/sprite.svg#facebook"></use>
+                                        <use xlink:href="../static/images/svg/sprite.svg#facebook"></use>
                                     </svg>
                                 </a>
                             </div>

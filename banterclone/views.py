@@ -20,7 +20,7 @@ class BlogArticle(TemplateView):
 class CaseStudy(TemplateView):
     template_name = "case-study.html"
 
-class Projects(TemplateView):
+class Project(TemplateView):
     template_name = "projects.html"
 
 class ServicesDetail(TemplateView):
@@ -36,4 +36,7 @@ class Contact(TemplateView):
     template_name = "contact.html"
 
 class Error404(TemplateView):
-    template_name = "404.html"                                  
+    template_name = "404.html"
+
+class Team(TemplateView):
+    template_name = "team.html"                                      
